@@ -114,7 +114,7 @@ int main(int argc, char* argv[])
         goto ossl_error;
     }
 
-    ret = SSL_CTX_load_verify_locations(ssl_ctx, "../tmp/nginx/conf/CA.crt", 0);
+    ret = SSL_CTX_load_verify_locations(ssl_ctx, "../../../tmp/nginx/conf/CA.crt", 0);
     if(ret != 1)
     {
         goto ossl_error;

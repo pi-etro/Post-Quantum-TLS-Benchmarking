@@ -4,7 +4,7 @@ import os
 import subprocess
 
 # Our experiment used POOL_SIZE = 40
-POOL_SIZE = 4
+POOL_SIZE = 40
 
 MEASUREMENTS_PER_TIMER = 100
 TIMERS = 50

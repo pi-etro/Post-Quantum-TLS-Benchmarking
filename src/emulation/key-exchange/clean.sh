@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ROOT="$(dirname $(pwd))"
+ROOT="$(dirname $(dirname $(dirname $(pwd))))"
 NGINX_APP=${ROOT}/tmp/nginx/sbin/nginx
 
 ##########################

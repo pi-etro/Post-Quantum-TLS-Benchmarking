@@ -1,4 +1,4 @@
-ROOT=$(shell dirname $(shell pwd))
+ROOT=$(shell dirname $(shell dirname $(shell dirname $(shell pwd))))
 OPENSSL_DIR=$(ROOT)/tmp/openssl
 
 OPENSSL_INCLUDE=$(OPENSSL_DIR)/include

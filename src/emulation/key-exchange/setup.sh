@@ -1,13 +1,15 @@
 #!/bin/bash
 set -ex
 
-ROOT="$(dirname $(pwd))"
+ROOT="$(dirname $(dirname $(dirname $(pwd))))"
 
 OPENSSL=${ROOT}/tmp/openssl/apps/openssl
 OPENSSL_CNF=${ROOT}/tmp/openssl/apps/openssl.cnf
 
 NGINX_APP=${ROOT}/tmp/nginx/sbin/nginx
 NGINX_CONF_DIR=${ROOT}/tmp/nginx/conf
+
+./clean.sh
 
 ##########################
 # Build s_timer
