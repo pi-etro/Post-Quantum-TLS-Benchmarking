@@ -81,7 +81,7 @@ for latency_ms in ['2.684ms', '15.458ms', '39.224ms', '97.73ms']:
     change_qdisc('srv_ns', 'srv_ve', 0, delay=latency_ms)
     rtt_str = get_rtt_ms()
 
-    for kex_alg in ['prime256v1', 'p256_kyber512_90s', 'p256_frodo640aes', 'p256_sikep434']:
+    for kex_alg in ['prime256v1', 'p256_bikel1', 'p256_hqc128', 'bikel1', 'hqc128']:
         with open('data/{}_{}ms.csv'.format(kex_alg, rtt_str),'w') as out:
             #each line contains: pkt_loss, observations
             csv_out=csv.writer(out)
